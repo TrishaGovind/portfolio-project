@@ -1,0 +1,16 @@
+body {
+  font-family: "Spartan", sans-serif;
+  background-color: rgb(209, 240, 237);
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  color: #eb327a;
+}
+h5 {
+  text-align: center;
+  font-weight: 300;
+  color: #eb327a;
+}
