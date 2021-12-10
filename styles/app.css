@@ -94,4 +94,7 @@ p {
     padding: 0;
     text-align: center;
   }
+  .hero {
+    padding: 90px 10px;
+  }
 }
