@@ -1,33 +1,66 @@
 :root {
   --primary-color: #eb327a;
   --secondary-color: #00c5cf;
-  --tertiary-color: rgb(240, 255, 253);
+  --tertiary-color: #e0f7f8;
+  --heading-font: BlackMango-Regular;
+  --subheading-font: BlackMango-Thin;
+  --paragraph-font: BlackMango-ExtraLight;
+}
+@font-face {
+  font-family: BlackMango-Thin;
+  src: url("/fonts/BlackMango-Thin.otf");
+}
+@font-face {
+  font-family: BlackMango-Regular;
+  src: url("/fonts/BlackMango-Regular.otf");
+}
+@font-face {
+  font-family: BlackMango-ExtraLight;
+  src: url("/fonts/BlackMango-ExtraLight.otf");
 }
 
-body {
-  font-family: "Spartan", sans-serif;
+nav ul {
+  padding: 38px 18px;
+  margin-bottom: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  margin-left: 22px;
+}
+nav a {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 18px;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
+  transition: all 100ms ease-in-out;
 }
 
 h1 {
-  font-size: 90px;
-  font-weight: 700;
+  font-family: var(--heading-font);
+  font-size: 100px;
   color: var(--primary-color);
 }
 h2 {
-  font-size: 18px;
-  font-weight: 200;
+  font-family: var(--subheading-font);
+  font-size: 26px;
   color: var(--primary-color);
 }
 h3 {
-  font-weight: 600;
+  font-family: var(--heading-font);
   font-size: 50px;
   color: var(--primary-color);
 }
 
 p {
-  color: #663f4e;
-  font-weight: 200;
-  line-height: 24px;
+  font-family: var(--paragraph-font);
+  color: #6e686e;
+  line-height: 26px;
+  letter-spacing: 1px;
 }
 img {
   border-radius: 25px;
@@ -35,9 +68,10 @@ img {
 a {
   text-decoration: none;
 }
-a:hover p {
-  color: var(--secondary-color);
-  transition: ease-in-out;
+
+.logo {
+  max-width: 100px;
+  max-height: 100px;
 }
 .hero {
   background-color: var(--tertiary-color);
@@ -53,7 +87,8 @@ a:hover p {
   margin-top: 35px;
   padding: 11px 21px;
   font-size: 13px;
-  font-weight: 200;
+  font-family: var(--paragraph-font);
+  letter-spacing: 2px;
 }
 .btn-branding:hover {
   background-color: white;
@@ -71,7 +106,8 @@ a:hover p {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 15px;
-  font-weight: 200;
+  font-family: var(--paragraph-font);
+  letter-spacing: 2px;
 }
 .btn-branding-outline:hover {
   background-color: white;
@@ -89,7 +125,10 @@ a:hover p {
   padding: 60px 20px;
 }
 .content-container h1 {
-  font-size: 73px;
+  font-size: 54px;
+}
+.content-container h2 {
+  font-size: 23px;
 }
 .content {
   padding: 110px 60px;
@@ -103,6 +142,7 @@ a:hover p {
 .contact-details {
   padding: 40px 0;
 }
+
 @media (max-width: 992px) {
   h1 {
     font-size: 68px;
@@ -131,5 +171,18 @@ a:hover p {
   .content-container {
     padding: 30px 20px;
     text-align: center;
+  }
+  .logo {
+    max-width: 60px;
+    max-height: 60px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+  nav li {
+    margin-left: 10px;
+  }
+  nav ul {
+    padding: 17px 18px;
   }
 }
