@@ -2,10 +2,11 @@
   --primary-color: #eb327a;
   --secondary-color: #00c5cf;
   --tertiary-color: #e0f7f8;
-  --heading-font: BlackMango-Regular;
+  --heading-font: BlackMango-SemiBold;
   --subheading-font: BlackMango-Thin;
   --paragraph-font: BlackMango-ExtraLight;
 }
+
 @font-face {
   font-family: BlackMango-Thin;
   src: url("/fonts/BlackMango-Thin.otf");
@@ -18,7 +19,14 @@
   font-family: BlackMango-ExtraLight;
   src: url("/fonts/BlackMango-ExtraLight.otf");
 }
-
+@font-face {
+  font-family: BlackMango-Bold;
+  src: url("/fonts/BlackMango-Bold.otf");
+}
+@font-face {
+  font-family: BlackMango-SemiBold;
+  src: url("/fonts/BlackMango-SemiBold.otf");
+}
 nav ul {
   padding: 38px 18px;
   margin-bottom: 0;
@@ -27,7 +35,8 @@ nav ul {
 nav li {
   display: inline;
   list-style: none;
-  margin-left: 22px;
+  margin-left: 50px;
+  letter-spacing: 1px;
 }
 nav a {
   font-family: var(--heading-font);
@@ -178,9 +187,10 @@ a {
   }
   nav a {
     font-size: 14px;
+    letter-spacing: 0;
   }
   nav li {
-    margin-left: 10px;
+    margin-left: 15px;
   }
   nav ul {
     padding: 17px 18px;
