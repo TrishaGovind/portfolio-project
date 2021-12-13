@@ -27,11 +27,11 @@
   font-family: BlackMango-SemiBold;
   src: url("/fonts/BlackMango-SemiBold.otf");
 }
+
 nav ul {
-  padding: 38px 18px;
+  padding: 36px 30px;
   margin-bottom: 0;
 }
-
 nav li {
   display: inline;
   list-style: none;
@@ -64,7 +64,6 @@ h3 {
   font-size: 50px;
   color: var(--primary-color);
 }
-
 p {
   font-family: var(--paragraph-font);
   color: #6e686e;
@@ -78,15 +77,34 @@ a {
   text-decoration: none;
 }
 
+footer .contact-box {
+  background-color: var(--tertiary-color);
+  padding: 46px 38px;
+  border-radius: 4px;
+}
+
+footer .social-links a {
+  font-size: 25px;
+  margin: 2px 20px;
+  color: var(--primary-color);
+  background-color: #fdeef4;
+  padding: 10px 18px;
+  border-radius: 50%;
+}
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  transition: all 100ms ease-in-out;
+}
+
 .logo {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 99px;
 }
 .hero {
   background-color: var(--tertiary-color);
   text-align: center;
   margin-bottom: 30px;
-  padding: 180px 20px 200px;
+  padding: 210px 20px;
 }
 .btn-branding {
   background-color: var(--secondary-color);
@@ -156,7 +174,6 @@ a {
   h1 {
     font-size: 68px;
   }
-
   h3 {
     font-size: 30px;
   }
@@ -185,6 +202,7 @@ a {
     max-width: 60px;
     max-height: 60px;
   }
+
   nav a {
     font-size: 14px;
     letter-spacing: 0;
@@ -194,5 +212,11 @@ a {
   }
   nav ul {
     padding: 17px 18px;
+  }
+  footer .social-links a {
+    font-size: 21px;
+    margin: 2px 20px;
+    padding: 3px 10px;
+    border-radius: 50%;
   }
 }
