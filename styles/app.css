@@ -3,7 +3,7 @@
   --secondary-color: #00c5cf;
   --tertiary-color: #e0f7f8;
   --heading-font: BlackMango-SemiBold;
-  --subheading-font: BlackMango-Regular;
+  --subheading-font: Gayathri;
   --paragraph-font: Gayathri;
   --button-font: BlackMango-SemiBold;
 }
@@ -59,7 +59,6 @@ h2 {
   font-family: var(--subheading-font);
   font-size: 26px;
   font-weight: 100;
-  line-height: 36px;
   color: var(--primary-color);
 }
 h3 {
@@ -180,12 +179,15 @@ footer .social-links a:hover {
   h1 {
     font-size: 68px;
   }
+  h2 {
+    font-size: 20px;
+  }
   h3 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .project-description {
-    padding: 0;
+    padding: 0 10px;
     text-align: center;
   }
   .hero {
@@ -212,11 +214,11 @@ footer .social-links a:hover {
     margin: 0;
   }
   nav a {
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 0;
   }
   nav li {
-    margin-left: 15px;
+    margin-left: 12px;
   }
   nav ul {
     padding: 17px 18px;
