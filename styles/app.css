@@ -59,6 +59,7 @@ h2 {
   font-family: var(--subheading-font);
   font-size: 26px;
   font-weight: 100;
+  letter-spacing: 2px;
   color: var(--primary-color);
 }
 h3 {
