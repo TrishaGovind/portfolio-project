@@ -43,6 +43,7 @@ nav a {
   font-family: var(--heading-font);
   color: var(--primary-color);
   font-size: 18px;
+  text-decoration: none;
 }
 nav a:hover,
 nav li.active a {
@@ -59,7 +60,7 @@ h2 {
   font-family: var(--subheading-font);
   font-size: 26px;
   font-weight: 100;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: var(--primary-color);
 }
 h3 {
@@ -70,15 +71,13 @@ h3 {
 p {
   font-family: var(--paragraph-font);
   font-weight: 100;
+  font-size: 21px;
   color: #6e686e;
   line-height: 26px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 img {
   border-radius: 10px;
-}
-a {
-  text-decoration: none;
 }
 
 footer .contact-box {
@@ -110,7 +109,7 @@ footer .social-links a:hover {
   background-color: var(--tertiary-color);
   text-align: center;
   margin-bottom: 30px;
-  padding: 185px 20px;
+  padding: 190px 20px;
 }
 .btn-branding {
   background-color: var(--secondary-color);
@@ -118,8 +117,8 @@ footer .social-links a:hover {
   color: white;
   border-radius: 4px;
   margin-top: 35px;
-  padding: 11px 21px;
-  font-size: 13px;
+  padding: 10px 20px;
+  font-size: 15px;
   font-family: var(--button-font);
   letter-spacing: 2px;
 }
@@ -152,7 +151,7 @@ footer .social-links a:hover {
   box-shadow: none;
 }
 .project-description {
-  padding: 90px 38px;
+  padding: 60px 38px;
 }
 .content-container {
   padding: 30px 20px;
@@ -164,7 +163,7 @@ footer .social-links a:hover {
   font-size: 23px;
 }
 .content {
-  padding: 25px 50px;
+  padding: 60px 50px;
 }
 .content-paragraph {
   padding-top: 30px;
@@ -175,8 +174,29 @@ footer .social-links a:hover {
 .contact-details {
   padding: 40px 0;
 }
-
+.contact-links {
+  text-decoration: none;
+  font-family: var(--paragraph-font);
+  font-weight: 100;
+  font-size: 21px;
+  color: #6e686e;
+  letter-spacing: 2px;
+  padding: 16px 0;
+}
+.contact-links:hover {
+  color: var(--primary-color);
+}
 @media (max-width: 992px) {
+  nav a {
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+  nav li {
+    margin-left: 12px;
+  }
+  nav ul {
+    padding: 17px 18px;
+  }
   h1 {
     font-size: 68px;
   }
@@ -186,13 +206,22 @@ footer .social-links a:hover {
   h3 {
     font-size: 28px;
   }
+  p {
+    font-size: 18px;
+  }
+  footer .social-links a {
+    font-size: 21px;
+    margin: 2px 16px;
+    padding: 3px 10px;
+    border-radius: 50%;
+  }
 
   .project-description {
-    padding: 0 10px;
+    padding: 0 3px;
     text-align: center;
   }
   .hero {
-    padding: 90px 10px;
+    padding: 90px 4px;
   }
   .content-container h1 {
     font-size: 45px;
@@ -201,7 +230,7 @@ footer .social-links a:hover {
     font-size: 16px;
   }
   .content {
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .content-container {
     padding: 30px 20px;
@@ -213,21 +242,5 @@ footer .social-links a:hover {
   }
   .carousel {
     margin: 0;
-  }
-  nav a {
-    font-size: 13px;
-    letter-spacing: 0;
-  }
-  nav li {
-    margin-left: 12px;
-  }
-  nav ul {
-    padding: 17px 18px;
-  }
-  footer .social-links a {
-    font-size: 21px;
-    margin: 2px 20px;
-    padding: 3px 10px;
-    border-radius: 50%;
   }
 }
