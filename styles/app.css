@@ -243,4 +243,7 @@ footer .social-links a:hover {
   .carousel {
     margin: 0;
   }
+  .contact-links {
+    font-size: 16px;
+  }
 }
